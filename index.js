@@ -252,8 +252,6 @@ function checkSelected() {
         document.getElementById('output').innerHTML = displayMessage;
         console.log(displayMessage)
     }
-}
-function copyToClipboard() {
     const messageDiv = document.getElementById('output'); // Get the div element
     const messageText = messageDiv.innerText; // Get the text content of the div
 
@@ -284,8 +282,4 @@ function copyToClipboard() {
     }).catch(err => {
         console.error('Failed to copy: ', err); // Log error if it fails
     });
-
 }
-
-
-
